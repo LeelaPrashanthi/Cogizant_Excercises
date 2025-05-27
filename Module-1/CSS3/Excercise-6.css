@@ -1,0 +1,37 @@
+/* 6. Link and List Styling */
+
+/* Style unvisited links */
+a:link {
+  color: #007BFF;              /* Bootstrap blue */
+  text-decoration: none;       /* Remove underline */
+}
+
+/* Style visited links */
+a:visited {
+  color: purple;               /* Purple for visited links */
+}
+
+/* Style on mouse hover */
+a:hover {
+  color: #0056b3;              /* Darker blue */
+  text-decoration: underline;  /* Underline on hover */
+}
+
+/* Style on click */
+a:active {
+  color: red;                  /* Red during click */
+}
+
+/* Remove bullets from nav menu and align inline */
+.navMenu {
+  list-style-type: none;       /* Remove bullets */
+  list-style-position: inside; /* Align bullets inside if any */
+  padding: 10px;               /* Space around the list */
+}
+
+/* Style each nav menu item */
+.navMenu li {
+  padding: 5px;
+  margin: 5px;
+  display: inline-block;       /* Make them horizontal */
+}

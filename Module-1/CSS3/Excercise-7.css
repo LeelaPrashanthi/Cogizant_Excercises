@@ -1,0 +1,20 @@
+/* 7. Table Styling */
+
+/* Style full table */
+table {
+  width: 100%;                 /* Full width table */
+  border-collapse: collapse;   /* Merge adjacent borders */
+  margin: 20px 0;              /* Add spacing above and below */
+  text-align: center;          /* Center content */
+}
+
+/* Style table headers and cells */
+th, td {
+  border: 1px solid #ccc;      /* Light gray borders */
+  padding: 10px;               /* Add spacing inside */
+}
+
+/* Zebra striping for rows */
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;   /* Light background on even rows */
+}

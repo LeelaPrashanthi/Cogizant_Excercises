@@ -1,0 +1,32 @@
+/* Simulated Devices in Chrome DevTools:
+
+Tested layout on mobile (iPhone SE), tablet (iPad), and desktop.
+
+Identified layout breakpoints.
+
+Inspected & Edited Styles:
+
+Used the Elements panel to live-edit CSS (e.g., padding, font-size).
+
+Verified .eventCard and navigation styles.
+
+Checked External CSS in Network Tab:
+
+Confirmed styles.css loads with 200 OK.
+
+Previewed loaded CSS to verify updates.
+
+Used Media Queries:
+
+Ensured mobile responsiveness: */
+
+
+
+@media screen and (max-width: 768px) {
+  .navMenu li {
+    display: block;
+    padding: 8px;
+  }
+}
+
+

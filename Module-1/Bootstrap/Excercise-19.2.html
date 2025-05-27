@@ -1,0 +1,29 @@
+<!-- Customize primary colors and border radius via _variables.scss and recompile Bootstrap
+Create a _custom-variables.scss file:
+// _custom-variables.scss
+$primary: #ff5722; // custom orange color
+$border-radius: 1rem; // increased border radius
+
+@import "node_modules/bootstrap/scss/bootstrap";
+Compile Sass:
+npx sass _custom-variables.scss custom.css
+
+
+
+HTML to use the customized CSS: -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Exercise 19.2 - Custom Bootstrap Variables</title>
+<link href="custom.css" rel="stylesheet" />
+</head>
+<body class="p-4">
+  <button class="btn btn-primary mb-3">Custom Primary Button</button>
+  <div class="card p-3" style="max-width: 300px;">
+    <p>Card with custom border radius</p>
+  </div>
+</body>
+</html>

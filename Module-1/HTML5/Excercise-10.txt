@@ -1,0 +1,12 @@
+No HTML needed; follow these steps:
+Inspect Element: Right-click any page element → Inspect → live-edit styles.
+
+Console Logs: In your JavaScript, use:
+
+javascript
+Copy
+Edit
+console.log("User clicked submit");
+Breakpoints: Open Sources tab → click a line number in a .js file to add a breakpoint.
+
+Reload Page: Use step-through debugging and variable watching.

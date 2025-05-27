@@ -1,0 +1,27 @@
+<!-- 5. Event Registration Form -->
+
+<style>
+  form {
+    border: 1px solid #ccc;
+    padding: 15px;
+    width: 300px;
+  }
+</style>
+
+<form onsubmit="event.preventDefault(); document.getElementById('confirmation').value='Registration successful!';">
+  <label>Name: <input type="text" name="name" required placeholder="Enter your name" autofocus></label><br><br>
+  <label>Email: <input type="email" name="email" required placeholder="example@mail.com"></label><br><br>
+  <label>Date: <input type="date" name="date" required></label><br><br>
+  <label>Event Type:
+    <select name="eventType" required>
+      <option value="">--Select--</option>
+      <option value="cleanup">Clean-Up Drive</option>
+      <option value="health">Health Camp</option>
+      <option value="fest">Cultural Fest</option>
+    </select>
+  </label><br><br>
+  <label>Message: <textarea name="message" placeholder="Your message..."></textarea></label><br><br>
+  <button type="submit">Submit</button>
+  <br><br>
+  <output id="confirmation"></output>
+</form>

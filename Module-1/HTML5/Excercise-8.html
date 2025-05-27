@@ -1,0 +1,30 @@
+<!-- 8. Saving User Preferences -->
+
+<script>
+  window.onload = function () {
+    const savedType = localStorage.getItem("preferredEvent");
+    if (savedType) {
+      document.getElementById("eventSelect").value = savedType;
+    }
+  };
+
+  function savePreference(select) {
+    localStorage.setItem("preferredEvent", select.value);
+    sessionStorage.setItem("lastSelected", select.value);
+  }
+
+  function clearPreferences() {
+    localStorage.clear();
+    sessionStorage.clear();
+    alert("Preferences cleared!");
+  }
+</script>
+
+<select id="eventSelect" onchange="savePreference(this)">
+  <option value="">--Select Event--</option>
+  <option value="cleanup">Clean-Up Drive</option>
+  <option value="health">Health Camp</option>
+  <option value="fest">Cultural Fest</option>
+</select>
+<br><br>
+<button onclick="clearPreferences()">Clear Preferences</button>

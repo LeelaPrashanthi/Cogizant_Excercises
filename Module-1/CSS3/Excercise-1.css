@@ -1,0 +1,10 @@
+/* Header styles */
+h2 {
+  color: #2c3e50; /* Dark text for headings */
+}
+
+/* Event card styling */
+.eventCard {
+  border: 1px solid #ccc; /* Light gray border */
+  padding: 10px;           /* Internal spacing */
+}

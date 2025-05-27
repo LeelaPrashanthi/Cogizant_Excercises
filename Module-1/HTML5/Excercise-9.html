@@ -1,0 +1,27 @@
+<!-- 9. Geolocation for Event Mapping -->
+
+<script>
+  function findNearbyEvents() {
+    if (!navigator.geolocation) {
+      alert("Geolocation not supported by your browser.");
+      return;
+    }
+
+    navigator.geolocation.getCurrentPosition(
+      (position) => {
+        const { latitude, longitude } = position.coords;
+        document.getElementById("locationResult").textContent = `Latitude: ${latitude}, Longitude: ${longitude}`;
+      },
+      (error) => {
+        document.getElementById("locationResult").textContent = `Error: ${error.message}`;
+      },
+      {
+        enableHighAccuracy: true,
+        timeout: 5000
+      }
+    );
+  }
+</script>
+
+<button onclick="findNearbyEvents()">Find Nearby Events</button>
+<div id="locationResult"></div>

@@ -1,0 +1,24 @@
+/* 4. Color & Background Styling */
+
+
+/* Set background color and text using HEX and RGBA */
+body {
+  background-color: #e0f7fa;        /* Soft teal background */
+  color: rgba(0, 0, 0, 0.8);        /* Slightly transparent black text */
+}
+
+/* Add background image with fallback color */
+body {
+  background-image: url('background.jpg'); /* Custom background */
+  background-color: #cceeff;               /* Fallback color */
+  background-size: cover;                  /* Cover entire area */
+  background-repeat: no-repeat;            /* Prevent repetition */
+}
+
+/* Apply gradient background to h3 headers */
+h3 {
+  background: linear-gradient(to right, #4facfe, #00f2fe); /* Blue gradient */
+  color: white;             /* White text over gradient */
+  padding: 5px;             /* Spacing inside the header */
+  border-radius: 4px;       /* Rounded corners */
+}

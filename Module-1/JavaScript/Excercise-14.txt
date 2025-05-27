@@ -1,0 +1,5 @@
+Benefit of moving to frameworks like React or Vue:
+
+
+Component-based architecture helps in building reusable UI components with clear state management,
+ making code easier to maintain and scale for large applications compared to jQuery’s imperative approach.

@@ -1,0 +1,33 @@
+<!-- 1. Why CSS? Inline vs. Internal vs. External -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Community Event Portal</title>
+
+  <!-- Internal CSS to style the body background -->
+  <style>
+    body {
+      background-color: #f0f8ff; /* Light blue background for the whole page */
+    }
+  </style>
+
+  <!-- External stylesheet for reusable styles -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Inline style to make heading red -->
+  <h1 style="color: red;">Welcome to Our Community Events!</h1>
+
+  <!-- This h2 will be styled via external stylesheet -->
+  <h2>Upcoming Events</h2>
+
+  <!-- Event card styled in external CSS -->
+  <div class="eventCard">
+    <p>Details about the event go here.</p>
+  </div>
+
+</body>
+</html>

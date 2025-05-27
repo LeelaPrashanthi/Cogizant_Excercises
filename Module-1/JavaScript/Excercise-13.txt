@@ -1,0 +1,13 @@
+ Steps:
+
+ 
+Open DevTools → Use Console for logs, Network to inspect requests.
+
+Log steps with console.log() (e.g., form submit, fetch data).
+
+Set breakpoints in JavaScript to pause and inspect values.
+
+Check Network tab → Verify fetch request, payload, and response.
+
+Fix issues → Add preventDefault(), correct fetch URL and headers, validate inputs.
+

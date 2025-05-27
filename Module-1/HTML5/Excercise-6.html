@@ -1,0 +1,41 @@
+<!-- 6. Event Feedback with Events Handling -->
+
+<script>
+  function validatePhone(input) {
+    const phonePattern = /^[0-9]{10}$/;
+    if (!phonePattern.test(input.value)) {
+      alert("Please enter a valid 10-digit phone number.");
+    }
+  }
+
+  function showFee(select) {
+    const feeMap = { cleanup: 0, health: 50, fest: 100 };
+    const fee = feeMap[select.value] || 0;
+    document.getElementById("feeDisplay").textContent = `Fee: ₹${fee}`;
+  }
+
+  function countChars(textarea) {
+    document.getElementById("charCount").textContent = `Characters: ${textarea.value.length}`;
+  }
+
+  function enlargeImage(img) {
+    img.style.width = "300px";
+  }
+</script>
+
+<form>
+  <label>Phone: <input type="text" onblur="validatePhone(this)" placeholder="Enter 10-digit number"></label><br><br>
+  <label>Event:
+    <select onchange="showFee(this)">
+      <option value="">--Select--</option>
+      <option value="cleanup">Clean-Up Drive</option>
+      <option value="health">Health Camp</option>
+      <option value="fest">Cultural Fest</option>
+    </select>
+  </label>
+  <div id="feeDisplay"></div><br>
+  <button type="button" onclick="alert('Feedback submitted!')">Submit</button><br><br>
+  <textarea onkeyup="countChars(this)" placeholder="Type your feedback..."></textarea>
+  <div id="charCount">Characters: 0</div><br>
+  <img src="event1.jpg" ondblclick="enlargeImage(this)" width="150" alt="Event Image">
+</form>

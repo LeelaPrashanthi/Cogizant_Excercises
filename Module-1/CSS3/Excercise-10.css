@@ -1,0 +1,31 @@
+/* 10. Responsive Web Design with Media Queries */
+
+/* Apply styles only for screens less than 768px wide */
+@media screen and (max-width: 768px) {
+  .navMenu li {
+    display: block;            /* Stack nav items vertically */
+    margin-bottom: 10px;
+  }
+
+  body {
+    font-size: 14px;           /* Reduce text size on small screens */
+  }
+
+  img {
+    max-width: 100%;           /* Make images responsive */
+    height: auto;
+  }
+
+  .eventCard {
+    padding: 10px;             /* Less padding */
+    margin: 10px;
+  }
+}
+
+/* Bonus: Use Flexbox for responsive layout */
+.eventContainer {
+  display: flex;               /* Enable flex layout */
+  flex-wrap: wrap;             /* Allow items to wrap */
+  gap: 20px;                   /* Space between items */
+  justify-content: space-around; /* Evenly space items */
+}

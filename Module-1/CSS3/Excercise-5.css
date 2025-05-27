@@ -1,0 +1,27 @@
+/* 5. Typography: Fonts and Text */
+
+
+/* Set global font styles using imported Google Font */
+body {
+  font-family: 'Roboto', sans-serif; /* Clean sans-serif font */
+  font-size: 16px;                   /* Default text size */
+  line-height: 1.6;                  /* Improve readability */
+  color: #333;                       /* Standard dark gray text */
+}
+
+/* Style description text */
+.eventDesc {
+  text-align: justify;        /* Align text to both sides */
+  text-transform: capitalize; /* Capitalize each word */
+  letter-spacing: 0.5px;      /* Add space between letters */
+  line-height: 1.8;           /* More line spacing */
+}
+
+/* Vary font weight and style */
+h1 {
+  font-weight: 700;           /* Bold heading */
+}
+
+p {
+  font-style: italic;         /* Italicized paragraphs */
+}

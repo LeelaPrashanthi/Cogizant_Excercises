@@ -1,0 +1,12 @@
+/* 9. Multiple Columns in Text */
+
+/* Style news article section to have columns */
+.newsArticle {
+  column-count: 2;             /* Split content into 2 columns */
+  column-gap: 30px;            /* Space between columns */
+  column-rule: 1px solid gray; /* Line between columns */
+  padding: 20px;
+  background-color: #f4f4f4;   /* Light gray background */
+  margin: 20px;
+}
+
